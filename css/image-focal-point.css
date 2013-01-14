@@ -1,0 +1,27 @@
+.focal-block {
+    background: transparent;
+    opacity: .5;
+    position: absolute;
+    border: 1px dashed #ccc;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 6px black;
+}
+.show-focal .focal-block { display: block; }
+.focal-block:hover { background: #eee; }
+.focal-block.active { background: #f00; }
+
+.imgedit-focal {
+    margin: 0 8px 0 3px;
+    background-image: url(press-this.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.wp_attachment_image .imgedit-focal {
+    width: 2em;
+    height: 2em;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
